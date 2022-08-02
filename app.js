@@ -68,10 +68,38 @@ else if ( Gender ==="female"){
 
 
 
-}
-var r=confirm("are you happy here ?")
-if(r==true){
+} 
 
-}else {
-    
+let array = [];
+
+var r=prompt("are you happy here ? yes/no")
+if(r!=="yes" && r!=="no"){
+    console.log("invalid")
 }
+array.push (r)
+
+
+
+
+var x=prompt("are you have a proplem ? yes/no")
+if(x!=="yes" && x!=="no"){
+    console.log("invalid")
+}
+array.push (x)
+
+
+
+var y=prompt("did you like this page ? yes/no")
+if(y!=="yes" && y!=="no"){
+    console.log("invalid")
+}
+array.push (y)
+for(let i=0;i<array.length;i++)
+{
+    console.log(array[i])
+}
+
+
+
+
+
